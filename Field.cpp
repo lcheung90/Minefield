@@ -50,7 +50,7 @@ FieldType Field::get(int x, int y)
 **/
  bool Field::isSafe(int x, int y)
  {
-     if(x <= 0 && y <= 0 && x >= 10 && y >= 10){
+     if(x < 0 && y < 0 && x >= FIELD_DIMENSION && y >= FIELD_DIMENSION){
 	 return true;
      }
      else{
