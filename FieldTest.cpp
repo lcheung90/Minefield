@@ -28,3 +28,9 @@ TEST(FieldTest, inBoundsSafeCheck)
     Field minefield;
     ASSERT_TRUE(minefield.isSafe(0,0));
 }
+
+TEST(FieldTest, outBoundsSafeCheck)
+{
+    Field field;
+    ASSERT_FALSE(field.isSafe(0,1000));
+}
