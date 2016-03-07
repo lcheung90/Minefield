@@ -50,8 +50,14 @@ FieldType Field::get(int x, int y)
 **/
  bool Field::isSafe(int x, int y)
  {
- 	//TODO: Complete this function, isSafe(int,int)
- 	return true;
+     if(x <= 0 && y <= 0 && x >= 10 && y >= 10){
+	 return true;
+     }
+     else{
+	 return false;
+	 throw "Out of bounds";
+     }
+
  }
 
 /**
